@@ -1,4 +1,9 @@
-import { Bank } from "./Bank.js";
+import { UserInteractions } from "./UserInteractions.js";
 
-const bank = new Bank(100);
-bank.debit(50);
+//Create UserInteractions object
+const ui = new UserInteractions();
+
+do {
+  ui.selectMenuOption();
+  ui.showOptionsBasedOnSelectedMenu();
+} while (ui.getMenuOption() !== "4");
